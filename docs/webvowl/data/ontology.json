@@ -1,0 +1,823 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa", "http://www.w3.org/2000/01/rdf-schema", "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Ontología de encuestas de satisfacción de aerolíneas"
+    },
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "author" : [ "David Quintana Cobaleda Aula 1\nEmilio Muela Beneyto Aula 2" ],
+    "labels" : {
+      "undefined" : "OESA"
+    },
+    "comments" : {
+      "undefined" : "Ontology for flight satisfaction surveys"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "David Quintana Cobaleda Aula 1\nEmilio Muela Beneyto Aula 2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Ontología de encuestas de satisfacción de aerolíneas",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FamilyLeisure",
+      "undefined" : "FamilyLeisure"
+    },
+    "comment" : {
+      "undefined" : "Travellers flying as a family unit, including adults and children, with specific needs for their travel experience"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HightValue",
+      "undefined" : "HighValue"
+    },
+    "comment" : {
+      "undefined" : "Indicates items, assessments, or entities that are of superior quality or importance"
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "subClasses" : [ "6", "7" ],
+    "comment" : {
+      "undefined" : "The type or model of airplane used for a flight"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EconomyClass",
+      "undefined" : "EconomyClass"
+    },
+    "comment" : {
+      "undefined" : "The basic seating class, offering standard services and amenities"
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/List_of_international_airports_by_country",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "City"
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "undefined" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/List_of_international_airports_by_country",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "City"
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A designated area or locality within a country"
+    },
+    "id" : "10",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowValue",
+      "undefined" : "LowValue"
+    },
+    "comment" : {
+      "undefined" : "Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction"
+    },
+    "id" : "11",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Boeing",
+      "undefined" : "Boeing"
+    },
+    "comment" : {
+      "undefined" : "An American multinational corporation that designs"
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "subClasses" : [ "11", "2", "15" ],
+    "comment" : {
+      "undefined" : "A numeric score or qualitative assessment given to a service feature, flight, or airline overall"
+    },
+    "id" : "3",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Traveller",
+      "undefined" : "Traveller"
+    },
+    "subClasses" : [ "16", "0", "17", "18" ],
+    "comment" : {
+      "undefined" : "An individual who travels"
+    },
+    "id" : "1",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CoupleLeisure",
+      "undefined" : "CoupleLeisure"
+    },
+    "comment" : {
+      "undefined" : "A pair of travellers on leisure, often sharing experiences and feedback about their journey"
+    },
+    "id" : "17",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessClass",
+      "undefined" : "BusinessClass"
+    },
+    "comment" : {
+      "undefined" : "A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience"
+    },
+    "id" : "20",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Category:Countries",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Spain",
+        "undefined" : "Spain"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A designated area or locality within a country"
+    },
+    "id" : "27",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date",
+      "undefined" : "Date"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "Date of flight"
+      },
+      "labels" : {
+        "IRI-based" : "DateFlight",
+        "undefined" : "DateFlight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "Date of published"
+      },
+      "labels" : {
+        "IRI-based" : "DatePublished",
+        "undefined" : "DatePublished"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The date on which the flight is scheduled to occur"
+    },
+    "id" : "24",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstClass",
+      "undefined" : "FirstClass"
+    },
+    "comment" : {
+      "undefined" : "The highest level of service and comfort on a flight, with exclusive amenities and personalized services"
+    },
+    "id" : "35",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoloTraveller",
+      "undefined" : "SoloTraveller"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "Traveller"
+      },
+      "labels" : {
+        "IRI-based" : "David",
+        "undefined" : "David"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A traveller who flies alone"
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatType",
+      "undefined" : "SeatType"
+    },
+    "subClasses" : [ "20", "35", "8" ],
+    "comment" : {
+      "undefined" : "The class or type of seating chosen by the traveller, affecting comfort and amenities"
+    },
+    "id" : "9",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey",
+    "baseIri" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Survey",
+      "undefined" : "Survey"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "This survey gathers customer opinions and satisfaction levels from passengers"
+      },
+      "labels" : {
+        "IRI-based" : "Survey3",
+        "undefined" : "Survey3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "This survey gathers customer opinions and satisfaction levels from passengers"
+      },
+      "labels" : {
+        "IRI-based" : "Survey1",
+        "undefined" : "Survey1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "This survey gathers customer opinions and satisfaction levels from passengers"
+      },
+      "labels" : {
+        "IRI-based" : "Survey2",
+        "undefined" : "Survey2"
+      }
+    } ],
+    "subClasses" : [ "27", "9", "3", "4", "1", "24", "14", "10" ],
+    "comment" : {
+      "undefined" : "A collection or set of questions aimed at gathering information from respondents to derive insights on various topics"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediumValue",
+      "undefined" : "MediumValue"
+    },
+    "comment" : {
+      "undefined" : "Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards"
+    },
+    "id" : "15",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommended",
+      "undefined" : "Recommended"
+    },
+    "comment" : {
+      "undefined" : "Indicates whether a reviewer recommends the airline or flight based on their experience"
+    },
+    "id" : "14",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AirBus",
+      "undefined" : "AirBus"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Airbus_A380",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Type of plane"
+      },
+      "labels" : {
+        "IRI-based" : "AirBus380",
+        "undefined" : "AirBus380"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A European multinational aerospace corporation"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Business",
+      "undefined" : "Business"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio",
+      "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+      "comment" : {
+        "undefined" : "Traveller"
+      },
+      "labels" : {
+        "IRI-based" : "Emilio",
+        "undefined" : "Emilio"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A traveller flying for business purposes"
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasOrigin",
+      "undefined" : "hasOrigin"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "This property specifies the starting point of a flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "5",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasDateFlight",
+      "undefined" : "hasDateFlight"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Specifies the exact date associated with an event"
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "range" : "5",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "reviewDate",
+      "undefined" : "reviewDate"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The date on which the review was published"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "9",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "3",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "3",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "ratingValue",
+      "undefined" : "ratingValue"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasDestination",
+      "undefined" : "hasDestination"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "This property defines the end point of a flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "undefined" : "hasCountry"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Specifies the country associated with an entity"
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished",
+    "baseIri" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasDatePublished",
+      "undefined" : "hasDatePublished"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "\"Specifies the exact date associated with a review"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  } ]
+}

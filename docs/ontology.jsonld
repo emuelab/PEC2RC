@@ -1,0 +1,915 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule applies when the rating is considered low"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LowRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid23"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule applies when the rating is high"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HightRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid34"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This rule is triggered when the rating is medium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MediumRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    }, {
+      "@id" : "_:genid16"
+    }, {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection or set of questions aimed at gathering information from respondents to derive insights on various topics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "David Quintana Cobaleda Aula 1\nEmilio Muela Beneyto Aula 2"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ontología de encuestas de satisfacción de aerolíneas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology for flight satisfaction surveys"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OESA"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A European multinational aerospace corporation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AirBus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AirBus380"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Airbus_A380"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The type or model of airplane used for a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/List_of_international_airports_by_country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An American multinational corporation that designs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A traveller flying for business purposes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BusinessClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A designated area or locality within a country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A designated area or locality within a country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A pair of travellers on leisure, often sharing experiences and feedback about their journey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CoupleLeisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date on which the flight is scheduled to occur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date of flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DateFlight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date of published"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DatePublished"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "David"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The basic seating class, offering standard services and amenities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EconomyClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Emilio"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Travellers flying as a family unit, including adults and children, with specific needs for their travel experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FamilyLeisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The highest level of service and comfort on a flight, with exclusive amenities and personalized services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FirstClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates items, assessments, or entities that are of superior quality or importance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LowValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/List_of_international_airports_by_country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MediumValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A numeric score or qualitative assessment given to a service feature, flight, or airline overall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates whether a reviewer recommends the airline or flight based on their experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class or type of seating chosen by the traveller, affecting comfort and amenities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SeatType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A traveller who flies alone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SoloTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  }, {
+    "@value" : "Spain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Category:Countries"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-04-11T14:00:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This survey gathers customer opinions and satisfaction levels from passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Survey1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-04-11T14:00:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This survey gathers customer opinions and satisfaction levels from passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Survey2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-04-11T14:00:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This survey gathers customer opinions and satisfaction levels from passengers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Survey3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual who travels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the country associated with an entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the exact date associated with an event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDateFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Specifies the exact date associated with a review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDatePublished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property defines the end point of a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property specifies the starting point of a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ratingValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date on which the review was published"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reviewDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#rating",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

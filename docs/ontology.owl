@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#"
+     xml:base="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:oesa="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0"/>
+        <dc:creator>David Quintana Cobaleda Aula 1
+Emilio Muela Beneyto Aula 2</dc:creator>
+        <dc:title>Ontología de encuestas de satisfacción de aerolíneas</dc:title>
+        <rdfs:comment>Ontology for flight satisfaction surveys</rdfs:comment>
+        <rdfs:label>OESA</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#author -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#author"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country"/>
+        <rdfs:comment>Specifies the country associated with an entity</rdfs:comment>
+        <rdfs:label>hasCountry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"/>
+        <rdfs:comment>Specifies the exact date associated with an event</rdfs:comment>
+        <rdfs:label>hasDateFlight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"/>
+        <rdfs:comment>&quot;Specifies the exact date associated with a review</rdfs:comment>
+        <rdfs:label>hasDatePublished</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"/>
+        <rdfs:comment>This property defines the end point of a flight</rdfs:comment>
+        <rdfs:label>hasDestination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"/>
+        <rdfs:comment>This property specifies the starting point of a flight</rdfs:comment>
+        <rdfs:label>hasOrigin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10</rdfs:comment>
+        <rdfs:label>ratingValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">
+        <rdfs:domain rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>The date on which the review was published</rdfs:comment>
+        <rdfs:label>reviewDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey -->
+
+
+    <owl:Class rdf:about="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A collection or set of questions aimed at gathering information from respondents to derive insights on various topics</rdfs:comment>
+        <rdfs:label>Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft"/>
+        <rdfs:comment>A European multinational aerospace corporation</rdfs:comment>
+        <rdfs:label>AirBus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>The type or model of airplane used for a flight</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft"/>
+        <rdfs:comment>An American multinational corporation that designs</rdfs:comment>
+        <rdfs:label>Boeing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"/>
+        <rdfs:comment>A traveller flying for business purposes</rdfs:comment>
+        <rdfs:label>Business</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType"/>
+        <rdfs:comment>A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience</rdfs:comment>
+        <rdfs:label>BusinessClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>A designated area or locality within a country</rdfs:comment>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>A designated area or locality within a country</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"/>
+        <rdfs:comment>A pair of travellers on leisure, often sharing experiences and feedback about their journey</rdfs:comment>
+        <rdfs:label>CoupleLeisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>The date on which the flight is scheduled to occur</rdfs:comment>
+        <rdfs:label>Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType"/>
+        <rdfs:comment>The basic seating class, offering standard services and amenities</rdfs:comment>
+        <rdfs:label>EconomyClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"/>
+        <rdfs:comment>Travellers flying as a family unit, including adults and children, with specific needs for their travel experience</rdfs:comment>
+        <rdfs:label>FamilyLeisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType"/>
+        <rdfs:comment>The highest level of service and comfort on a flight, with exclusive amenities and personalized services</rdfs:comment>
+        <rdfs:label>FirstClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating"/>
+        <rdfs:comment>Indicates items, assessments, or entities that are of superior quality or importance</rdfs:comment>
+        <rdfs:label>HighValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating"/>
+        <rdfs:comment>Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction</rdfs:comment>
+        <rdfs:label>LowValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating"/>
+        <rdfs:comment>Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards</rdfs:comment>
+        <rdfs:label>MediumValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>A numeric score or qualitative assessment given to a service feature, flight, or airline overall</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>Indicates whether a reviewer recommends the airline or flight based on their experience</rdfs:comment>
+        <rdfs:label>Recommended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>The class or type of seating chosen by the traveller, affecting comfort and amenities</rdfs:comment>
+        <rdfs:label>SeatType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller"/>
+        <rdfs:comment>A traveller who flies alone</rdfs:comment>
+        <rdfs:label>SoloTraveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <rdfs:comment>An individual who travels</rdfs:comment>
+        <rdfs:label>Traveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus"/>
+        <rdfs:comment>Type of plane</rdfs:comment>
+        <rdfs:label>AirBus380</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Airbus_A380</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"/>
+        <rdfs:comment>City</rdfs:comment>
+        <rdfs:label>Barcelona</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/List_of_international_airports_by_country</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"/>
+        <rdfs:comment>Date of flight</rdfs:comment>
+        <rdfs:label>DateFlight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date"/>
+        <rdfs:comment>Date of published</rdfs:comment>
+        <rdfs:label>DatePublished</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller"/>
+        <rdfs:comment>Traveller</rdfs:comment>
+        <rdfs:label>David</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business"/>
+        <rdfs:comment>Traveller</rdfs:comment>
+        <rdfs:label>Emilio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City"/>
+        <rdfs:comment>City</rdfs:comment>
+        <rdfs:label>Madrid</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/List_of_international_airports_by_country</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country"/>
+        <rdfs:label>Country</rdfs:label>
+        <rdfs:label>Spain</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Category:Countries</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1">
+        <rdf:type rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <hasCountry rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain"/>
+        <hasDateFlight rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight"/>
+        <hasDatePublished rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid"/>
+        <hasOrigin rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona"/>
+        <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ratingValue>
+        <reviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T14:00:00</reviewDate>
+        <rdfs:comment>This survey gathers customer opinions and satisfaction levels from passengers</rdfs:comment>
+        <rdfs:label>Survey1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2">
+        <rdf:type rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <hasCountry rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain"/>
+        <hasDateFlight rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight"/>
+        <hasDatePublished rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid"/>
+        <hasOrigin rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona"/>
+        <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</ratingValue>
+        <reviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T14:00:00</reviewDate>
+        <rdfs:comment>This survey gathers customer opinions and satisfaction levels from passengers</rdfs:comment>
+        <rdfs:label>Survey2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3">
+        <rdf:type rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+        <hasCountry rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain"/>
+        <hasDateFlight rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight"/>
+        <hasDatePublished rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished"/>
+        <hasDestination rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid"/>
+        <hasOrigin rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona"/>
+        <ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ratingValue>
+        <reviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T14:00:00</reviewDate>
+        <rdfs:comment>This survey gathers customer opinions and satisfaction levels from passengers</rdfs:comment>
+        <rdfs:label>Survey3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#rating">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>This rule applies when the rating is considered low</rdfs:comment>
+        <rdfs:label>LowRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#rating"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>This rule applies when the rating is high</rdfs:comment>
+        <rdfs:label>HightRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#rating"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>This rule is triggered when the rating is medium</rdfs:comment>
+        <rdfs:label>MediumRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#rating"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#rating"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

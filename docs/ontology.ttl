@@ -1,0 +1,524 @@
+@prefix : <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#> .
+
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> rdf:type owl:Ontology ;
+                                                                       owl:versionIRI <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0> ;
+                                                                       <http://purl.org/dc/elements/1.1/creator> """David Quintana Cobaleda Aula 1
+Emilio Muela Beneyto Aula 2""" ;
+                                                                       <http://purl.org/dc/elements/1.1/title> "Ontología de encuestas de satisfacción de aerolíneas" ;
+                                                                       rdfs:comment "Ontology for flight satisfaction surveys" ;
+                                                                       rdfs:label "OESA" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#author
+rdfs:author rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+            rdfs:range :Country ;
+            rdfs:comment "Specifies the country associated with an entity" ;
+            rdfs:label "hasCountry" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight
+:hasDateFlight rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+               rdfs:range :Date ;
+               rdfs:comment "Specifies the exact date associated with an event" ;
+               rdfs:label "hasDateFlight" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished
+:hasDatePublished rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+                  rdfs:range :Date ;
+                  rdfs:comment "\"Specifies the exact date associated with a review" ;
+                  rdfs:label "hasDatePublished" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination
+:hasDestination rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+                rdfs:range :City ;
+                rdfs:comment "This property defines the end point of a flight" ;
+                rdfs:label "hasDestination" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+           rdfs:range :City ;
+           rdfs:comment "This property specifies the starting point of a flight" ;
+           rdfs:label "hasOrigin" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue
+:ratingValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10" ;
+             rdfs:label "ratingValue" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate
+:reviewDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+            rdfs:range xsd:dateTime ;
+            rdfs:comment "The date on which the review was published" ;
+            rdfs:label "reviewDate" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty :hasCountry ;
+                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                          owl:onClass :Country
+                                                                                                                        ] ,
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty :hasDateFlight ;
+                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                          owl:onClass :Date
+                                                                                                                        ] ,
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty :hasDatePublished ;
+                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                          owl:onClass :Date
+                                                                                                                        ] ,
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty :hasDestination ;
+                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                          owl:onClass :City
+                                                                                                                        ] ,
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty :hasOrigin ;
+                                                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                          owl:onClass :City
+                                                                                                                        ] ;
+                                                                                                        rdfs:comment "A collection or set of questions aimed at gathering information from respondents to derive insights on various topics" ;
+                                                                                                        rdfs:label "Survey" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus
+:AirBus rdf:type owl:Class ;
+        rdfs:subClassOf :Aircraft ;
+        rdfs:comment "A European multinational aerospace corporation" ;
+        rdfs:label "AirBus" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+          rdfs:comment "The type or model of airplane used for a flight" ;
+          rdfs:label "Aircraft" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing
+:Boeing rdf:type owl:Class ;
+        rdfs:subClassOf :Aircraft ;
+        rdfs:comment "An American multinational corporation that designs" ;
+        rdfs:label "Boeing" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :Traveller ;
+          rdfs:comment "A traveller flying for business purposes" ;
+          rdfs:label "Business" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass
+:BusinessClass rdf:type owl:Class ;
+               rdfs:subClassOf :SeatType ;
+               rdfs:comment "A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience" ;
+               rdfs:label "BusinessClass" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+      rdfs:comment "A designated area or locality within a country" ;
+      rdfs:label "City" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+         rdfs:comment "A designated area or locality within a country" ;
+         rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure
+:CoupleLeisure rdf:type owl:Class ;
+               rdfs:subClassOf :Traveller ;
+               rdfs:comment "A pair of travellers on leisure, often sharing experiences and feedback about their journey" ;
+               rdfs:label "CoupleLeisure" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date
+:Date rdf:type owl:Class ;
+      rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+      rdfs:comment "The date on which the flight is scheduled to occur" ;
+      rdfs:label "Date" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass
+:EconomyClass rdf:type owl:Class ;
+              rdfs:subClassOf :SeatType ;
+              rdfs:comment "The basic seating class, offering standard services and amenities" ;
+              rdfs:label "EconomyClass" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure
+:FamilyLeisure rdf:type owl:Class ;
+               rdfs:subClassOf :Traveller ;
+               rdfs:comment "Travellers flying as a family unit, including adults and children, with specific needs for their travel experience" ;
+               rdfs:label "FamilyLeisure" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass
+:FirstClass rdf:type owl:Class ;
+            rdfs:subClassOf :SeatType ;
+            rdfs:comment "The highest level of service and comfort on a flight, with exclusive amenities and personalized services" ;
+            rdfs:label "FirstClass" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue
+:HightValue rdf:type owl:Class ;
+            rdfs:subClassOf :Rating ;
+            rdfs:comment "Indicates items, assessments, or entities that are of superior quality or importance" ;
+            rdfs:label "HighValue" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue
+:LowValue rdf:type owl:Class ;
+          rdfs:subClassOf :Rating ;
+          rdfs:comment "Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction" ;
+          rdfs:label "LowValue" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue
+:MediumValue rdf:type owl:Class ;
+             rdfs:subClassOf :Rating ;
+             rdfs:comment "Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards" ;
+             rdfs:label "MediumValue" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+        rdfs:comment "A numeric score or qualitative assessment given to a service feature, flight, or airline overall" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+             rdfs:comment "Indicates whether a reviewer recommends the airline or flight based on their experience" ;
+             rdfs:label "Recommended" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+          rdfs:comment "The class or type of seating chosen by the traveller, affecting comfort and amenities" ;
+          rdfs:label "SeatType" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller
+:SoloTraveller rdf:type owl:Class ;
+               rdfs:subClassOf :Traveller ;
+               rdfs:comment "A traveller who flies alone" ;
+               rdfs:label "SoloTraveller" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller
+:Traveller rdf:type owl:Class ;
+           rdfs:subClassOf <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+           rdfs:comment "An individual who travels" ;
+           rdfs:label "Traveller" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380
+:AirBus380 rdf:type owl:NamedIndividual ,
+                    :AirBus ;
+           rdfs:comment "Type of plane" ;
+           rdfs:label "AirBus380" ;
+           rdfs:sameAs "https://dbpedia.org/page/Airbus_A380"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ;
+           rdfs:comment "City" ;
+           rdfs:label "Barcelona" ;
+           rdfs:sameAs "https://dbpedia.org/page/List_of_international_airports_by_country"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight
+:DateFlight rdf:type owl:NamedIndividual ,
+                     :Date ;
+            rdfs:comment "Date of flight" ;
+            rdfs:label "DateFlight" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished
+:DatePublished rdf:type owl:NamedIndividual ,
+                        :Date ;
+               rdfs:comment "Date of published" ;
+               rdfs:label "DatePublished" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David
+:David rdf:type owl:NamedIndividual ,
+                :SoloTraveller ;
+       rdfs:comment "Traveller" ;
+       rdfs:label "David" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio
+:Emilio rdf:type owl:NamedIndividual ,
+                 :Business ;
+        rdfs:comment "Traveller" ;
+        rdfs:label "Emilio" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        rdfs:comment "City" ;
+        rdfs:label "Madrid" ;
+        rdfs:sameAs "https://dbpedia.org/page/List_of_international_airports_by_country"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                :Country ;
+       rdfs:label "Country" ,
+                  "Spain" ;
+       rdfs:sameAs "https://dbpedia.org/page/Category:Countries"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1
+:Survey1 rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+         :hasCountry :Spain ;
+         :hasDateFlight :DateFlight ;
+         :hasDatePublished :DatePublished ;
+         :hasDestination :Madrid ;
+         :hasOrigin :Barcelona ;
+         :ratingValue 7 ;
+         :reviewDate "2024-04-11T14:00:00"^^xsd:dateTime ;
+         rdfs:comment "This survey gathers customer opinions and satisfaction levels from passengers" ;
+         rdfs:label "Survey1" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2
+:Survey2 rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+         :hasCountry :Spain ;
+         :hasDateFlight :DateFlight ;
+         :hasDatePublished :DatePublished ;
+         :hasDestination :Madrid ;
+         :hasOrigin :Barcelona ;
+         :ratingValue 9 ;
+         :reviewDate "2024-04-11T14:00:00"^^xsd:dateTime ;
+         rdfs:comment "This survey gathers customer opinions and satisfaction levels from passengers" ;
+         rdfs:label "Survey2" .
+
+
+###  http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3
+:Survey3 rdf:type owl:NamedIndividual ,
+                  <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+         :hasCountry :Spain ;
+         :hasDateFlight :DateFlight ;
+         :hasDatePublished :DatePublished ;
+         :hasDestination :Madrid ;
+         :hasOrigin :Barcelona ;
+         :ratingValue 2 ;
+         :reviewDate "2024-04-11T14:00:00"^^xsd:dateTime ;
+         rdfs:comment "This survey gathers customer opinions and satisfaction levels from passengers" ;
+         rdfs:label "Survey3" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#rating> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdfs:comment "This rule applies when the rating is considered low" ;
+   rdfs:label "LowRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :ratingValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#rating> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :LowValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "This rule applies when the rating is high" ;
+   rdfs:label "HightRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :ratingValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#rating> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 8 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HightValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "This rule is triggered when the rating is medium" ;
+   rdfs:label "MediumRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :ratingValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#rating> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#rating> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 7 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MediumValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

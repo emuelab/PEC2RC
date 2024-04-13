@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Ontología de encuestas de satisfacción de aerolíneas</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa","name":"Ontología de encuestas de satisfacción de aerolíneas", "headline":"Document describing the ontology http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa", "dateReleased":"Sat Apr 13 12:44:17 CEST 2024", "author":[{"@type":"Person","name":"David Quintana Cobaleda Aula 1
+Emilio Muela Beneyto Aula 2"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Ontología de encuestas de satisfacción de aerolíneas</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0">http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa">http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa</a></dd>
+<dt>Authors:</dt>
+<dd>David Quintana Cobaleda Aula 1
+Emilio Muela Beneyto Aula 2</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>David Quintana Cobaleda Aula 1
+Emilio Muela Beneyto Aula 2. Ontología de encuestas de satisfacción de aerolíneas. Retrieved from: http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>oesa</b></td><td>&lt;http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#&gt;</td></tr>
+<tr><td><b>oesa1</b></td><td>&lt;http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl#&gt;</td></tr>
+<tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb#&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">OESA: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AirBus"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus">AirBus</a>
+   </li>
+   <li>
+      <a href="#Aircraft"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft">Aircraft</a>
+   </li>
+   <li>
+      <a href="#Boeing"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing">Boeing</a>
+   </li>
+   <li>
+      <a href="#Business"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business">Business</a>
+   </li>
+   <li>
+      <a href="#BusinessClass"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass">BusinessClass</a>
+   </li>
+   <li>
+      <a href="#City"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a>
+   </li>
+   <li>
+      <a href="#Country"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country">Country</a>
+   </li>
+   <li>
+      <a href="#CoupleLeisure"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure">CoupleLeisure</a>
+   </li>
+   <li>
+      <a href="#Date"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a>
+   </li>
+   <li>
+      <a href="#EconomyClass"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass">EconomyClass</a>
+   </li>
+   <li>
+      <a href="#FamilyLeisure"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure">FamilyLeisure</a>
+   </li>
+   <li>
+      <a href="#FirstClass"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass">FirstClass</a>
+   </li>
+   <li>
+      <a href="#HightValue"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue">HighValue</a>
+   </li>
+   <li>
+      <a href="#LowValue"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue">LowValue</a>
+   </li>
+   <li>
+      <a href="#MediumValue"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue">MediumValue</a>
+   </li>
+   <li>
+      <a href="#Rating"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">Rating</a>
+   </li>
+   <li>
+      <a href="#Recommended"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended">Recommended</a>
+   </li>
+   <li>
+      <a href="#SeatType"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">SeatType</a>
+   </li>
+   <li>
+      <a href="#SoloTraveller"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller">SoloTraveller</a>
+   </li>
+   <li>
+      <a href="#http://example.org/ontology#Survey"
+         title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a>
+   </li>
+   <li>
+      <a href="#Traveller"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#hasCountry"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a>
+   </li>
+   <li>
+      <a href="#hasDateFlight"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a>
+   </li>
+   <li>
+      <a href="#hasDatePublished"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a>
+   </li>
+   <li>
+      <a href="#hasDestination"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a>
+   </li>
+   <li>
+      <a href="#hasOrigin"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#ratingValue"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a>
+   </li>
+   <li>
+      <a href="#reviewDate"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">reviewDate</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://www.w3.org/2000/01/rdf-schema#author" title="http://www.w3.org/2000/01/rdf-schema#author">
+         <span>author</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date">
+         <span>date</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/license" title="http://purl.org/dc/elements/1.1/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2000/01/rdf-schema#sameAs" title="http://www.w3.org/2000/01/rdf-schema#sameAs">
+         <span>same As</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AirBus380"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380">AirBus380</a>
+   </li>
+   <li>
+      <a href="#Barcelona"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">Barcelona</a>
+   </li>
+   <li>
+      <a href="#Spain"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">Country</a>
+   </li>
+   <li>
+      <a href="#DateFlight"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">DateFlight</a>
+   </li>
+   <li>
+      <a href="#DatePublished"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">DatePublished</a>
+   </li>
+   <li>
+      <a href="#David"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David">David</a>
+   </li>
+   <li>
+      <a href="#Emilio"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio">Emilio</a>
+   </li>
+   <li>
+      <a href="#Madrid"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">Madrid</a>
+   </li>
+   <li>
+      <a href="#Survey1"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1">Survey1</a>
+   </li>
+   <li>
+      <a href="#Survey2"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2">Survey2</a>
+   </li>
+   <li>
+      <a href="#Survey3"
+         title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3">Survey3</a>
+   </li>
+</ul><h4> SWRL Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#d4e848">HightRule</a>
+   </li>
+   <li>
+      <a href="#d4e730">LowRule</a>
+   </li>
+   <li>
+      <a href="#d4e966">MediumRule</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">OESA: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Ontology for flight satisfaction surveys</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for OESA classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OESA.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#AirBus" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus">AirBus</a></li>
+  <li><a href="#Aircraft" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft">Aircraft</a></li>
+  <li><a href="#Boeing" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing">Boeing</a></li>
+  <li><a href="#Business" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business">Business</a></li>
+  <li><a href="#BusinessClass" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass">BusinessClass</a></li>
+  <li><a href="#City" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a></li>
+  <li><a href="#Country" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country">Country</a></li>
+  <li><a href="#CoupleLeisure" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure">CoupleLeisure</a></li>
+  <li><a href="#Date" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a></li>
+  <li><a href="#EconomyClass" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass">EconomyClass</a></li>
+  <li><a href="#FamilyLeisure" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure">FamilyLeisure</a></li>
+  <li><a href="#FirstClass" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass">FirstClass</a></li>
+  <li><a href="#HightValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue">HighValue</a></li>
+  <li><a href="#LowValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue">LowValue</a></li>
+  <li><a href="#MediumValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue">MediumValue</a></li>
+  <li><a href="#Rating" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">Rating</a></li>
+  <li><a href="#Recommended" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended">Recommended</a></li>
+  <li><a href="#SeatType" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">SeatType</a></li>
+  <li><a href="#SoloTraveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller">SoloTraveller</a></li>
+  <li><a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a></li>
+  <li><a href="#Traveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a></li>
+ </ul>
+ <div class="entity" id="AirBus">
+  <h3>AirBus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus</p>
+  <div class="comment">
+   <span class="markdown">A European multinational aerospace corporation</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Aircraft" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft">Aircraft</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#AirBus380" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380">AirBus380</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Aircraft">
+  <h3>Aircraft<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft</p>
+  <div class="comment">
+   <span class="markdown">The type or model of airplane used for a flight</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#AirBus" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus">AirBus</a> <sup class="type-c" title="class">c</sup>, <a href="#Boeing" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing">Boeing</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Boeing">
+  <h3>Boeing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing</p>
+  <div class="comment">
+   <span class="markdown">An American multinational corporation that designs</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Aircraft" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft">Aircraft</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Business">
+  <h3>Business<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business</p>
+  <div class="comment">
+   <span class="markdown">A traveller flying for business purposes</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Traveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Emilio" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio">Emilio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="BusinessClass">
+  <h3>BusinessClass<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass</p>
+  <div class="comment">
+   <span class="markdown">A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SeatType" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">SeatType</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="City">
+  <h3>City<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City</p>
+  <div class="comment">
+   <span class="markdown">A designated area or locality within a country</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasDestination" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOrigin" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Barcelona" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">Barcelona</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Madrid" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country">
+  <h3>Country<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country</p>
+  <div class="comment">
+   <span class="markdown">A designated area or locality within a country</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Spain" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">Country</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CoupleLeisure">
+  <h3>CoupleLeisure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure</p>
+  <div class="comment">
+   <span class="markdown">A pair of travellers on leisure, often sharing experiences and feedback about their journey</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Traveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Date">
+  <h3>Date<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date</p>
+  <div class="comment">
+   <span class="markdown">The date on which the flight is scheduled to occur</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasDateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">DateFlight</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">DatePublished</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EconomyClass">
+  <h3>EconomyClass<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass</p>
+  <div class="comment">
+   <span class="markdown">The basic seating class, offering standard services and amenities</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SeatType" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">SeatType</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FamilyLeisure">
+  <h3>FamilyLeisure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure</p>
+  <div class="comment">
+   <span class="markdown">Travellers flying as a family unit, including adults and children, with specific needs for their travel experience</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Traveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FirstClass">
+  <h3>FirstClass<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass</p>
+  <div class="comment">
+   <span class="markdown">The highest level of service and comfort on a flight, with exclusive amenities and personalized services</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SeatType" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">SeatType</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HightValue">
+  <h3>HighValue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue</p>
+  <div class="comment">
+   <span class="markdown">Indicates items, assessments, or entities that are of superior quality or importance</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Rating" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">Rating</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LowValue">
+  <h3>LowValue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue</p>
+  <div class="comment">
+   <span class="markdown">Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Rating" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">Rating</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MediumValue">
+  <h3>MediumValue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue</p>
+  <div class="comment">
+   <span class="markdown">Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Rating" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">Rating</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Rating">
+  <h3>Rating<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating</p>
+  <div class="comment">
+   <span class="markdown">A numeric score or qualitative assessment given to a service feature, flight, or airline overall</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#HightValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue">HighValue</a> <sup class="type-c" title="class">c</sup>, <a href="#LowValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue">LowValue</a> <sup class="type-c" title="class">c</sup>, <a href="#MediumValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue">MediumValue</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Recommended">
+  <h3>Recommended<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether a reviewer recommends the airline or flight based on their experience</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SeatType">
+  <h3>SeatType<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType</p>
+  <div class="comment">
+   <span class="markdown">The class or type of seating chosen by the traveller, affecting comfort and amenities</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#BusinessClass" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass">BusinessClass</a> <sup class="type-c" title="class">c</sup>, <a href="#EconomyClass" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass">EconomyClass</a> <sup class="type-c" title="class">c</sup>, <a href="#FirstClass" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass">FirstClass</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoloTraveller">
+  <h3>SoloTraveller<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller</p>
+  <div class="comment">
+   <span class="markdown">A traveller who flies alone</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Traveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#David" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David">David</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://example.org/ontology#Survey">
+  <h3>Survey<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey</p>
+  <div class="comment">
+   <span class="markdown">A collection or set of questions aimed at gathering information from respondents to derive insights on various topics</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Aircraft" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft">Aircraft</a> <sup class="type-c" title="class">c</sup>, <a href="#City" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a> <sup class="type-c" title="class">c</sup>, <a href="#Country" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country">Country</a> <sup class="type-c" title="class">c</sup>, <a href="#Date" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a> <sup class="type-c" title="class">c</sup>, <a href="#Rating" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating">Rating</a> <sup class="type-c" title="class">c</sup>, <a href="#Recommended" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended">Recommended</a> <sup class="type-c" title="class">c</sup>, <a href="#SeatType" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType">SeatType</a> <sup class="type-c" title="class">c</sup>, <a href="#Traveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller">Traveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDestination" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOrigin" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a> <sup class="type-op" title="object property">op</sup>, <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#reviewDate" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">reviewDate</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Survey1" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1">Survey1</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Survey2" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2">Survey2</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Survey3" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3">Survey3</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Traveller">
+  <h3>Traveller<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller</p>
+  <div class="comment">
+   <span class="markdown">An individual who travels</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Business" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business">Business</a> <sup class="type-c" title="class">c</sup>, <a href="#CoupleLeisure" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure">CoupleLeisure</a> <sup class="type-c" title="class">c</sup>, <a href="#FamilyLeisure" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure">FamilyLeisure</a> <sup class="type-c" title="class">c</sup>, <a href="#SoloTraveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller">SoloTraveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasCountry" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a></li>
+  <li><a href="#hasDateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a></li>
+  <li><a href="#hasDatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a></li>
+  <li><a href="#hasDestination" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a></li>
+  <li><a href="#hasOrigin" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a></li>
+ </ul>
+ <div class="entity" id="hasCountry">
+  <h3>hasCountry<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry</p>
+  <div class="comment">
+   <span class="markdown">Specifies the country associated with an entity</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Country" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country">Country</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDateFlight">
+  <h3>hasDateFlight<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight</p>
+  <div class="comment">
+   <span class="markdown">Specifies the exact date associated with an event</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Date" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDatePublished">
+  <h3>hasDatePublished<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished</p>
+  <div class="comment">
+   <span class="markdown">"Specifies the exact date associated with a review</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Date" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDestination">
+  <h3>hasDestination<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination</p>
+  <div class="comment">
+   <span class="markdown">This property defines the end point of a flight</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasOrigin">
+  <h3>hasOrigin<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the starting point of a flight</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a></li>
+  <li><a href="#reviewDate" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">reviewDate</a></li>
+ </ul>
+ <div class="entity" id="ratingValue">
+  <h3>ratingValue<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue</p>
+  <div class="comment">
+   <span class="markdown">Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reviewDate">
+  <h3>reviewDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which the review was published</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.w3.org/2000/01/rdf-schema#author" title="http://www.w3.org/2000/01/rdf-schema#author"> <span>author</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date"> <span>date</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/license" title="http://purl.org/dc/elements/1.1/license"> <span>license</span> </a></li>
+  <li><a href="#http://www.w3.org/2000/01/rdf-schema#sameAs" title="http://www.w3.org/2000/01/rdf-schema#sameAs"> <span>same As</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#author">
+  <h3>author<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#author</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/date">
+  <h3>date<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/date</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/license</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#sameAs">
+  <h3>same As<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#sameAs</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#AirBus380" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380">AirBus380</a></li>
+  <li><a href="#Barcelona" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">Barcelona</a></li>
+  <li><a href="#Spain" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">Country</a></li>
+  <li><a href="#DateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">DateFlight</a></li>
+  <li><a href="#DatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">DatePublished</a></li>
+  <li><a href="#David" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David">David</a></li>
+  <li><a href="#Emilio" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio">Emilio</a></li>
+  <li><a href="#Madrid" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">Madrid</a></li>
+  <li><a href="#Survey1" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1">Survey1</a></li>
+  <li><a href="#Survey2" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2">Survey2</a></li>
+  <li><a href="#Survey3" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3">Survey3</a></li>
+ </ul>
+ <div class="entity" id="AirBus380">
+  <h3>AirBus380<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380</p>
+  <div class="comment">
+   <span class="markdown">Type of plane</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#AirBus" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus">AirBus</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Barcelona">
+  <h3>Barcelona<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona</p>
+  <div class="comment">
+   <span class="markdown">City</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#City" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Spain">
+  <h3>Country<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Country" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country">Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DateFlight">
+  <h3>DateFlight<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight</p>
+  <div class="comment">
+   <span class="markdown">Date of flight</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Date" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DatePublished">
+  <h3>DatePublished<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished</p>
+  <div class="comment">
+   <span class="markdown">Date of published</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Date" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date">Date</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="David">
+  <h3>David<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David</p>
+  <div class="comment">
+   <span class="markdown">Traveller</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SoloTraveller" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller">SoloTraveller</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Emilio">
+  <h3>Emilio<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio</p>
+  <div class="comment">
+   <span class="markdown">Traveller</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Business" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business">Business</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Madrid">
+  <h3>Madrid<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid</p>
+  <div class="comment">
+   <span class="markdown">City</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#City" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City">City</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Survey1">
+  <h3>Survey1<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1</p>
+  <div class="comment">
+   <span class="markdown">This survey gathers customer opinions and satisfaction levels from passengers</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup> <a href="#Spain" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">Country</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a> <sup class="type-op" title="object property">op</sup> <a href="#DateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">DateFlight</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a> <sup class="type-op" title="object property">op</sup> <a href="#DatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">DatePublished</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDestination" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasOrigin" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a> <sup class="type-op" title="object property">op</sup> <a href="#Barcelona" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">Barcelona</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"7"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#reviewDate" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">reviewDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-04-11T14:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Survey2">
+  <h3>Survey2<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2</p>
+  <div class="comment">
+   <span class="markdown">This survey gathers customer opinions and satisfaction levels from passengers</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup> <a href="#Spain" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">Country</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a> <sup class="type-op" title="object property">op</sup> <a href="#DateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">DateFlight</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a> <sup class="type-op" title="object property">op</sup> <a href="#DatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">DatePublished</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDestination" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasOrigin" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a> <sup class="type-op" title="object property">op</sup> <a href="#Barcelona" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">Barcelona</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"9"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#reviewDate" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">reviewDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-04-11T14:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Survey3">
+  <h3>Survey3<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3</p>
+  <div class="comment">
+   <span class="markdown">This survey gathers customer opinions and satisfaction levels from passengers</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup> <a href="#Spain" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain">Country</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight">hasDateFlight</a> <sup class="type-op" title="object property">op</sup> <a href="#DateFlight" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight">DateFlight</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished">hasDatePublished</a> <sup class="type-op" title="object property">op</sup> <a href="#DatePublished" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished">DatePublished</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDestination" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination">hasDestination</a> <sup class="type-op" title="object property">op</sup> <a href="#Madrid" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid">Madrid</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasOrigin" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin">hasOrigin</a> <sup class="type-op" title="object property">op</sup> <a href="#Barcelona" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona">Barcelona</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#reviewDate" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate">reviewDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-04-11T14:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
+ <h3 id="swrlrules" class="list">SWRL rules</h3>
+ <ul class="hlist">
+  <li><a href="#d4e848">HightRule</a></li>
+  <li><a href="#d4e730">LowRule</a></li>
+  <li><a href="#d4e966">MediumRule</a></li>
+ </ul>
+ <div class="entity" id="d4e848">
+  <h3>HightRule<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p>This rule applies when the rating is high<br><br><a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>(?s) , <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup>(?s,?rating) , <a href="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual" title="greaterThanOrEqual">greaterThanOrEqual</a>(?) -&gt; <a href="#HightValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue">HighValue</a> <sup class="type-c" title="class">c</sup>(?s)</p>
+ </div>
+ <div class="entity" id="d4e730">
+  <h3>LowRule<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p>This rule applies when the rating is considered low<br><br><a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>(?s) , <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup>(?s,?rating) , <a href="http://www.w3.org/2003/11/swrlb#lessThan" title="lessThan">lessThan</a>(?) -&gt; <a href="#LowValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue">LowValue</a> <sup class="type-c" title="class">c</sup>(?s)</p>
+ </div>
+ <div class="entity" id="d4e966">
+  <h3>MediumRule<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p>This rule is triggered when the rating is medium<br><br><a href="#http://example.org/ontology#Survey" title="http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey">Survey</a> <sup class="type-c" title="class">c</sup>(?s) , <a href="#ratingValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue">ratingValue</a> <sup class="type-dp" title="data property">dp</sup>(?s,?rating) , <a href="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual" title="greaterThanOrEqual">greaterThanOrEqual</a>(?) , <a href="http://www.w3.org/2003/11/swrlb#lessThanOrEqual" title="lessThanOrEqual">lessThanOrEqual</a>(?) -&gt; <a href="#MediumValue" title="http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue">MediumValue</a> <sup class="type-c" title="class">c</sup>(?s)</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

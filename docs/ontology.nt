@@ -1,0 +1,494 @@
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> <http://purl.org/dc/elements/1.1/creator> "David Quintana Cobaleda Aula 1\nEmilio Muela Beneyto Aula 2" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> <http://purl.org/dc/elements/1.1/title> "Ontología de encuestas de satisfacción de aerolíneas" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for flight satisfaction surveys" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa> <http://www.w3.org/2000/01/rdf-schema#label> "OESA" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#author
+<http://www.w3.org/2000/01/rdf-schema#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the country associated with an entity" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the exact date associated with an event" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.w3.org/2000/01/rdf-schema#label> "hasDateFlight" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Specifies the exact date associated with a review" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "hasDatePublished" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the end point of a flight" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the starting point of a flight" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> <http://www.w3.org/2000/01/rdf-schema#label> "ratingValue" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the review was published" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> <http://www.w3.org/2000/01/rdf-schema#label> "reviewDate" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection or set of questions aimed at gathering information from respondents to derive insights on various topics" .
+<http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus> <http://www.w3.org/2000/01/rdf-schema#comment> "A European multinational aerospace corporation" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus> <http://www.w3.org/2000/01/rdf-schema#label> "AirBus" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or model of airplane used for a flight" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Aircraft> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing> <http://www.w3.org/2000/01/rdf-schema#comment> "An American multinational corporation that designs" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Boeing> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business> <http://www.w3.org/2000/01/rdf-schema#comment> "A traveller flying for business purposes" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#BusinessClass> <http://www.w3.org/2000/01/rdf-schema#label> "BusinessClass" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A designated area or locality within a country" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A designated area or locality within a country" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "A pair of travellers on leisure, often sharing experiences and feedback about their journey" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "CoupleLeisure" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the flight is scheduled to occur" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The basic seating class, offering standard services and amenities" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClass" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Travellers flying as a family unit, including adults and children, with specific needs for their travel experience" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "FamilyLeisure" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The highest level of service and comfort on a flight, with exclusive amenities and personalized services" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClass" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates items, assessments, or entities that are of superior quality or importance" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue> <http://www.w3.org/2000/01/rdf-schema#label> "HighValue" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue> <http://www.w3.org/2000/01/rdf-schema#label> "LowValue" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue> <http://www.w3.org/2000/01/rdf-schema#label> "MediumValue" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "A numeric score or qualitative assessment given to a service feature, flight, or airline overall" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a reviewer recommends the airline or flight based on their experience" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "The class or type of seating chosen by the traveller, affecting comfort and amenities" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "A traveller who flies alone" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "SoloTraveller" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual who travels" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Traveller> <http://www.w3.org/2000/01/rdf-schema#label> "Traveller" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of plane" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380> <http://www.w3.org/2000/01/rdf-schema#label> "AirBus380" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#AirBus380> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airbus_A380"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "City" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/List_of_international_airports_by_country"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of flight" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> <http://www.w3.org/2000/01/rdf-schema#label> "DateFlight" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Date> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of published" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "DatePublished" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#SoloTraveller> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveller" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#David> <http://www.w3.org/2000/01/rdf-schema#label> "David" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Business> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio> <http://www.w3.org/2000/01/rdf-schema#comment> "Traveller" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Emilio> <http://www.w3.org/2000/01/rdf-schema#label> "Emilio" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#City> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> <http://www.w3.org/2000/01/rdf-schema#comment> "City" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/List_of_international_airports_by_country"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Country> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> <http://www.w3.org/2000/01/rdf-schema#label> "Spain" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Category:Countries"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> "2024-04-11T14:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.w3.org/2000/01/rdf-schema#comment> "This survey gathers customer opinions and satisfaction levels from passengers" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey1> <http://www.w3.org/2000/01/rdf-schema#label> "Survey1" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> "2024-04-11T14:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.w3.org/2000/01/rdf-schema#comment> "This survey gathers customer opinions and satisfaction levels from passengers" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey2> <http://www.w3.org/2000/01/rdf-schema#label> "Survey2" .
+# 
+# http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasCountry> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Spain> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDateFlight> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DateFlight> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDatePublished> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#DatePublished> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasDestination> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Madrid> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#hasOrigin> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Barcelona> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#reviewDate> "2024-04-11T14:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.w3.org/2000/01/rdf-schema#comment> "This survey gathers customer opinions and satisfaction levels from passengers" .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey3> <http://www.w3.org/2000/01/rdf-schema#label> "Survey3" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid21 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule applies when the rating is considered low" .
+_:genid21 <http://www.w3.org/2000/01/rdf-schema#label> "LowRule" .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid21 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#arguments> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#rating> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#LowValue> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule applies when the rating is high" .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#label> "HightRule" .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid32 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#arguments> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#rating> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#HightValue> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#comment> "This rule is triggered when the rating is medium" .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "MediumRule" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid6 <http://www.w3.org/2003/11/swrl#body> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2003/11/swrl#arguments> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#rating> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#arguments> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#rating> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#ratingValue> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid18 <http://www.w3.org/2003/11/swrl#classPredicate> <http://example.org/ontologyhttp://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#Survey> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/2003/11/swrl#head> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa#MediumValue> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

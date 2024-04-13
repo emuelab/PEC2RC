@@ -1,0 +1,12 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa/1.0.0> a prov:Entity;
+	 dc:title "Ontología de encuestas de satisfacción de aerolíneas";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://www.semanticweb.org/emueladquintanaco/ontologies/2024/3/oesa>;
+.
+:agent0 a prov:Agent; foaf:name "David Quintana Cobaleda Aula 1
+Emilio Muela Beneyto Aula 2".
